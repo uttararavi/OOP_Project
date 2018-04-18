@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
+//import javax.swing.*;
 import java.io.*;
 import java.util.*;
 import java.lang.Math.*;
@@ -104,7 +104,8 @@ class Calculator extends Frame {
 		{
 			public void windowClosing(WindowEvent ev)
 			{
-				System.exit(0);
+				//System.exit(0);
+				ev.getWindow().dispose();
 			}
 		});
 
@@ -186,6 +187,7 @@ class Calculator extends Frame {
 
 	public static void main(String[] args) {
 		Calculator c = new Calculator();
+		//System.out.println("hello");
 	}
 }
 
